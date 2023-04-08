@@ -2,4 +2,8 @@ name: OpTools
 version: '${project.version}'
 main: me.adamwierzbanowski.optools.OpTools
 api-version: 1.19
-load: STARTUP
+description: Adds Operator Tools
+commands:
+  God:
+    description: Makes you or the given player invulnerable
+    usage: /<command> Player
