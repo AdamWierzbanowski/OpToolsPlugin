@@ -1,0 +1,5 @@
+name: OpTools
+version: '${project.version}'
+main: me.adamwierzbanowski.optools.OpTools
+api-version: 1.19
+load: STARTUP
