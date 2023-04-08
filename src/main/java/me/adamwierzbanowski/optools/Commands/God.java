@@ -45,10 +45,10 @@ public class God implements CommandExecutor {
     private void GodMode(Player p, String messagePrefix) {
         if (p.isInvulnerable()) {
             p.setInvulnerable(false);
-            p.sendMessage(messagePrefix + ChatColor.YELLOW + "God Mode is" + ChatColor.DARK_RED + "Disabled");
+            p.sendMessage(messagePrefix + ChatColor.YELLOW + "God Mode is" + ChatColor.DARK_RED + " Disabled");
         } else {
             p.setInvulnerable(true);
-            p.sendMessage(messagePrefix + ChatColor.YELLOW + "God Mode is" + ChatColor.DARK_GREEN + "Enabled");
+            p.sendMessage(messagePrefix + ChatColor.YELLOW + "God Mode is" + ChatColor.DARK_GREEN + " Enabled");
         }
     }
 }
