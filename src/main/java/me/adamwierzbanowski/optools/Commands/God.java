@@ -14,8 +14,9 @@ public class God implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        String messagePrefix = ChatColor.translateAlternateColorCodes('&', OpTools.plugin.getConfig().getString("messagePrefix"));
-        String noPermissionMessage = ChatColor.RED + OpTools.plugin.getConfig().getString("noPermissionMessage");
+        String messagePrefix = OpTools.plugin.GetMessagePrefix();
+        String noPermissionMessage = OpTools.plugin.GetNoPermissionMessage();
+
         if (sender instanceof Player p) {
             //Player
             if (args.length == 0) {

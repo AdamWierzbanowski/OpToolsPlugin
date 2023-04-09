@@ -7,3 +7,6 @@ commands:
   God:
     description: Makes you or the given player invulnerable
     usage: /<command> Player
+  TimeBan:
+    description: Bans the given player for a chosen amount of time
+    usage: /<command> Player

@@ -1,2 +1,13 @@
-messagePrefix: '&8[&4Op&2Tools&8] '
-noPermissionMessage: 'You do not have the required permissions to execute this command.'
+messages:
+  messagePrefix: '&8[&4Op&2Tools&8]'
+  noPermissionMessage: '&4You do not have the required permissions to execute this command.'
+timeBanLenghts:
+  - 1
+  - 5
+  - 10
+  - 15
+  - 30
+  - 45
+  - 60
+  - 90
+  - 120
