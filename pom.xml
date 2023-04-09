@@ -6,7 +6,7 @@
 
     <groupId>me.adamwierzbanowski</groupId>
     <artifactId>OpTools</artifactId>
-    <version>1.11-SNAPSHOT</version>
+    <version>1.13-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>OpTools</name>
