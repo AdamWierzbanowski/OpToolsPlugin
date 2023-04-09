@@ -53,12 +53,16 @@ public class TimeBan implements CommandExecutor {
             return null;
         }
 
-        Inventory gui = Bukkit.createInventory(p, (int) Math.ceil(timeBanLenghts.size() / 9) * 9,  messagePrefix + ChatColor.YELLOW + "Time" + ChatColor.GREEN + "Ban");
+        Inventory gui = Bukkit.createInventory(p, (((int) (timeBanLenghts.size() / 9)) + 1) * 9,  messagePrefix + ChatColor.YELLOW + "Time" + ChatColor.GREEN + "Ban");
 
-        for (int i = 0; i < timeBanLenghts.size() - 1; i++) {
+        for (int i = 0; i < timeBanLenghts.size(); i++) {
             ItemStack banItem = new ItemStack(Material.RED_CONCRETE, Math.min(timeBanLenghts.get(i), 64));
             ItemMeta itemMeta = banItem.getItemMeta();
-            itemMeta.setDisplayName(timeBanLenghts.get(i) + "" + ChatColor.RED + " Minutes." );
+            if (timeBanLenghts.get(i) != 1) {
+                itemMeta.setDisplayName(timeBanLenghts.get(i) + "" + ChatColor.RED + " Minutes.");
+            } else {
+                itemMeta.setDisplayName("1" + ChatColor.RED + " Minute.");
+            }
 
             banItem.setItemMeta(itemMeta);
             gui.setItem(i, banItem);
