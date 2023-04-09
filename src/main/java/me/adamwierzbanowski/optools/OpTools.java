@@ -26,4 +26,8 @@ public final class OpTools extends JavaPlugin {
     public String GetNoPermissionMessage() {
         return ChatColor.translateAlternateColorCodes('&', getConfig().getString("messages.noPermissionMessage"));
     }
+
+    public String GetErrorMessage() {
+        return ChatColor.translateAlternateColorCodes('&', getConfig().getString("messages.errorMessage"));
+    }
 }

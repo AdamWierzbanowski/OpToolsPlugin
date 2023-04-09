@@ -30,16 +30,20 @@ public class TimeBan implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         String messagePrefix = OpTools.plugin.GetMessagePrefix();
         String noPermissionMessage = OpTools.plugin.GetNoPermissionMessage();
+        String errorMessage = OpTools.plugin.GetErrorMessage();
         List<Integer> timeBanLenghts = OpTools.plugin.getConfig().getIntegerList("timeBanLenghts");
 
         if (sender instanceof Player p) {
             if (p.hasPermission("optools.timeban")) {
                 if (args.length == 1) {
-
+                    Inventory gui = GetGui(p, timeBanLenghts, messagePrefix);
+                    p.openInventory(gui);
                 }
             } else {
                 p.sendMessage(noPermissionMessage);
             }
+        } else {
+            System.out.println(messagePrefix + errorMessage);
         }
         return true;
     }

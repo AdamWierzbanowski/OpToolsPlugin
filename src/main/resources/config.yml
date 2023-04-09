@@ -1,6 +1,7 @@
 messages:
   messagePrefix: '&8[&4Op&2Tools&8]'
   noPermissionMessage: '&4You do not have the required permissions to execute this command.'
+  errorMessage: '&4Error: Sorry somethig went wrong while executing the command'
 timeBanLenghts:
   - 1
   - 5
