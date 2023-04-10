@@ -1,23 +1,27 @@
-messages:
-  messagePrefix: '&8[&4Op&2Tools&8]'
-  noPermissionMessage: '&4You do not have the required permissions to execute this command.'
-  errorMessage: '&4Error: Sorry somethig went wrong while executing the command'
-timeBanLenghts:
-  - 1
-  - 5
-  - 10
-  - 15
-  - 30
-  - 45
-  - 60
-  - 90
-  - 120
-  - 180
-  - 240
-  - 300
-  - 360
-  - 420
-  - 480
-  - 540
-  - 600
-  - 1440
+Messages:
+  MessagePrefix: '&8[&4Op&2Tools&8]'
+  NoPermissionMessage: '&4You do not have the required permissions to execute this command.'
+  ErrorMessage: '&4Error: Sorry somethig went wrong while executing the command'
+
+#Guis
+TimeBanGui:
+  Title: '&eTime &cBan'
+  TimeBanLenghts:
+    - 1
+    - 5
+    - 10
+    - 15
+    - 30
+    - 45
+    - 60
+    - 90
+    - 120
+    - 180
+    - 240
+    - 300
+    - 360
+    - 420
+    - 480
+    - 540
+    - 600
+    - 1440
